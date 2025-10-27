@@ -73,7 +73,7 @@ Choose between cloud or local AI for maximum control and flexibility.
 ```bash
 npm start
 ```
-- Launches the Vite dev server on port 5173  
+- Launches the Vite dev server on port 5180  
 - Starts the Electron desktop app  
 - Connects automatically to Gemini or Ollama  
 
@@ -120,7 +120,7 @@ ollama serve
 - Press `Ctrl + C` (Windows/Linux) or `Cmd + C` (Mac) in the terminal  
 - If ports remain busy:
   ```bash
-  lsof -i :5173
+  lsof -i :5180
   kill -9 [PID]
   ```
 - Or run:
@@ -198,7 +198,7 @@ ollama serve
 
 **Port Conflict**
 ```bash
-kill -9 $(lsof -t -i:5173)
+kill -9 $(lsof -t -i:5180)
 ```
 
 **Sharp/Python Errors**
@@ -208,7 +208,7 @@ npm rebuild sharp
 ```
 
 **App Not Launching**
-- Ensure Vite is using port `5173`  
+- Ensure Vite is using port `5180`  
 - Confirm Ollama is running (`ollama serve`)  
 
 ---
