@@ -114,7 +114,7 @@ const QueueCommands: React.FC<QueueCommandsProps> = ({
         {/* Voice Recording Button */}
         <div className="flex items-center gap-2">
           <button
-            className={`bg-white/10 hover:bg-white/20 transition-colors rounded-md px-2 py-1 text-[11px] leading-none text-white/70 flex items-center gap-1 ${isRecording ? 'bg-red-500/70 hover:bg-red-500/90' : ''}`}
+            className={`bg-white/10 hover:bg-white/20 transition-colors rounded-md px-2 py-1 text-[11px] leading-none text-white/70 flex items-center gap-1 cursor-default ${isRecording ? 'bg-red-500/70 hover:bg-red-500/90' : ''}`}
             onClick={handleRecordClick}
             type="button"
           >
@@ -125,6 +125,7 @@ const QueueCommands: React.FC<QueueCommandsProps> = ({
             )}
           </button>
         </div>
+
 
         {/* Chat Button */}
         <div className="flex items-center gap-2">
